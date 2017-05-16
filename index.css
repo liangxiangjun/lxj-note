@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#el{
+    width: 100%;
+    height: 100vh;
+}
+html{
+    height: 100%;
+}
+.header{
+    height: 50px;
+    background: #333;
+}
+.content{
+    /*position: relative;*/
+}
+.note{
+    position: absolute;
+    width: 200px;
+    border:1px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.note.red{
+    border:1px solid #ff2f38;
+}
+.note.blue{
+    border:1px solid cornflowerblue;
+}
+.note.orange{
+    border:1px solid coral;
+}
+.note.green{
+    border:1px solid limegreen;
+}
+.note.yellow{
+    border:1px solid yellowgreen;
+}
+
+.note.red .title{
+    background: #ff2f38;
+}
+.note.blue .title{
+    background: cornflowerblue;
+}
+.note.orange .title{
+    background: coral;
+}
+.note.green .title{
+    background: limegreen;
+}
+.note.yellow .title{
+    background: yellowgreen;
+}
+
+
+.note .title{
+    height:50px;
+    /*background: red;*/
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.note .title a{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.note .content{
+    height:300px;
+    background: #fff;
+    color: #666;
+    padding: 5px;
+}
+.note textarea{
+    border: none;
+    min-height: 100px;
+    width: 100%;
+    outline: none;
+    resize: none;
+}
+.note.active{
+    z-index: 99999;
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.3);
+}
